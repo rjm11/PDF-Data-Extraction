@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .container { padding: 20px; }
+    .alert { padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; }
+    .alert.info { background-color: #e7f3fe; color: #31708f; }
+    .alert.default { background-color: #dff0d8; color: #3c763d; }
+    .alert.destructive { background-color: #f2dede; color: #a94442; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+    th { background-color: #f9f9f9; }
+    .bg-yellow { background-color: #fff3cd; }
+    .bg-green-light { background-color: #d4edda; }
+    .bg-green { background-color: #c3e6cb; }
+    .bg-blue { background-color: #bee5eb; }
+    .bg-red { background-color: #f8d7da; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Performance Dashboard (2/3/2025)</h1>
+    <p>Total Surveys: 533 (+35 new)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Booneville Market</th>
+          <th>Min</th>
+          <th>Tar</th>
+          <th>ET</th>
+          <th>Chal</th>
+          <th>Results</th>
+          <th>Surveys</th>
+          <th>FY24 Year-End</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AS (OAS-CAHPS)</td>
+          <td class="bg-yellow">91.27</td>
+          <td class="bg-green-light">91.95</td>
+          <td class="bg-green">92.26</td>
+          <td class="bg-blue">92.68</td>
+          <td class="bg-red">90.20 <span style="color: green;">? +0.40%</span></td>
+          <td>102 (+4)</td>
+          <td>95.11</td>
+        </tr>
+        <tr>
+          <td>IN (H-CAHPS)</td>
+          <td class="bg-yellow">75.95</td>
+          <td class="bg-green-light">77.25</td>
+          <td class="bg-green">77.78</td>
+          <td class="bg-blue">78.64</td>
+          <td class="bg-blue">94.29 <span style="color: green;">? +0.96%</span></td>
+          <td>35 (+5)</td>
+          <td>86.09</td>
+        </tr>
+        <tr>
+          <td>ER</td>
+          <td class="bg-yellow">85.50</td>
+          <td class="bg-green-light">86.90</td>
+          <td class="bg-green">87.46</td>
+          <td class="bg-blue">88.09</td>
+          <td class="bg-red">84.52 <span style="color: red;">? -0.90%</span></td>
+          <td>108 (+9)</td>
+          <td>85.96</td>
+        </tr>
+        <tr>
+          <td>OU</td>
+          <td class="bg-yellow">95.56</td>
+          <td class="bg-green-light">95.73</td>
+          <td class="bg-green">95.82</td>
+          <td class="bg-blue">95.97</td>
+          <td class="bg-blue">96.00 <span style="color: red;">? -0.09%</span></td>
+          <td>288 (+17)</td>
+          <td>96.01</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Weekly Performance Analysis</h2>
+    <div class="alert destructive">
+      <strong>AS (OAS-CAHPS):</strong> Currently at 90.20% (58th percentile) - Still below the minimum goal (91.27%), but showing improvement (+0.40%) with moderate survey growth (+4).
+    </div>
+    <div class="alert default">
+      <strong>IN (H-CAHPS):</strong> Currently at 94.29% (99th percentile) - Further improvement (+0.96%) with a steady increase in surveys (+5).
+    </div>
+    <div class="alert destructive">
+      <strong>ER:</strong> Currently at 84.52% (34th percentile) - Dropped (-0.90%) despite higher survey volume (+9), now below the minimum goal.
+    </div>
+    <div class="alert default">
+      <strong>OU:</strong> Currently at 96.00% (77th percentile) - Minor decrease (-0.09%) with strong survey volume (+17).
+    </div>
+  </div>
+</body>
+</html>
